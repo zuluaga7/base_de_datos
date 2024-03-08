@@ -3,7 +3,7 @@
 class FlujoFront:
 
     def validar_informacion():
-        # Obtener la información del módulo data_base.py
+        # Obtener la información del módulo base_de_datos.py
         informacion_db = data_base.obtener_informacion()
 
         # Comparar la información obtenida con la información esperada
@@ -14,7 +14,7 @@ class FlujoFront:
 
     def verificar_informacion():
 
-        # Obtener la información del módulo data_base.py
+        # Obtener la información del módulo base_de_datos.py
         informacion_db = data_base.obtener_informacion()
 
         # Filtrar la información por fecha de cierre
