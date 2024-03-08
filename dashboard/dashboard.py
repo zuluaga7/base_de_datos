@@ -38,3 +38,7 @@ try:
 
 except FileNotFoundError as e:
     print(f"Error: {e}")
+
+
+def app():
+    return None

@@ -99,7 +99,7 @@ class BaseDeDatos:
         if self.datos is None:
             print("Error: Los datos no han sido cargados.")
             return pd.DataFrame()
-        return self.datos[self.datos[columna_fecha] > fecha]
+        return self.datos[self.datos[columna_fecha] !=fecha]
 
     def obtener_inventario_datos(self):
         return self.datos.to_dict(orient="records")
