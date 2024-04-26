@@ -1,39 +1,42 @@
-'''import data_base
+import data_base
+
+
+def validar_informacion(informacion_esperada=None):
+    # Obtener la información del módulo base_de_datos.py
+    informacion_db = data_base.obtener_informacion()
+
+    # Comparar la información obtenida con la información esperada
+    if informacion_db == informacion_esperada:
+        return True
+
+    return False
+
+
+def verificar_informacion(fecha_cierre=None):
+
+    # Obtener la información del módulo base_de_datos.py
+    informacion_db = data_base.obtener_informacion()
+
+    # Filtrar la información por fecha de cierre
+    informacion_filtrada = []
+    for dato in informacion_db:
+        if dato["fecha_cierre"] > fecha_cierre:
+            informacion_filtrada.append(dato)
+
+    # Encontrar los datos que se repiten en la información filtrada
+    datos_repetidos = []
+    for dato in informacion_filtrada:
+        if dato in datos_repetidos:
+            continue
+        else:
+            datos_repetidos.append(dato)
+
+    # Mostrar los datos que se repiten
+    for dato in datos_repetidos:
+        print(dato)
+
 
 class FlujoFront:
-
-    def validar_informacion():
-        # Obtener la información del módulo base_de_datos.py
-        informacion_db = data_base.obtener_informacion()
-
-        # Comparar la información obtenida con la información esperada
-        if informacion_db == informacion_esperada:
-            return True
-
-        return False
-
-    def verificar_informacion():
-
-        # Obtener la información del módulo base_de_datos.py
-        informacion_db = data_base.obtener_informacion()
-
-        # Filtrar la información por fecha de cierre
-        informacion_filtrada = []
-        for dato in informacion_db:
-            if dato["fecha_cierre"] > fecha_cierre:
-                informacion_filtrada.append(dato)
-
-        # Encontrar los datos que se repiten en la información filtrada
-        datos_repetidos = []
-        for dato in informacion_filtrada:
-            if dato in datos_repetidos:
-                continue
-            else:
-                datos_repetidos.append(dato)
-
-        # Mostrar los datos que se repiten
-        for dato in datos_repetidos:
-            print(dato)
 
     def obtener_datos_repetidos(informacion, fecha_cierre):
 
@@ -75,7 +78,7 @@ class FlujoFront:
     datos_repetidos = obtener_datos_repetidos(informacion, fecha_cierre)
 
     for dato in datos_repetidos:
-        print(dato)>'''
+        print(dato)
 
 
 

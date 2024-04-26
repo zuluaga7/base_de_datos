@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+'''import matplotlib.pyplot as plt
 from data_base.base_de_datos import BaseDeDatos
 
 try:
@@ -37,7 +37,7 @@ try:
     plt.show()
 
 except FileNotFoundError as e:
-    print(f"Error: {e}")
+    print(f"Error: {e}")'''
 
 
 def app():

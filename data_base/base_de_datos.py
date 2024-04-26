@@ -1,8 +1,10 @@
 import os
 import pandas as pd
 
-class BaseDeDatos:
+
+class BaseDeDatos: 
     def __init__(self, nombre_archivo="archivo.csv", ruta="C:\\Users\\MATEO\\Documents\\python\\app_z_data\\data"):
+        self.nombre = None
         self.ruta_csv = os.path.join(ruta, nombre_archivo)
         self.datos = None
         self.inventario = None
@@ -61,7 +63,11 @@ class BaseDeDatos:
         except Exception as e:
             print(f"Error al cargar y actualizar la base de datos: {str(e)}")
 
-    def comparar_bases(self, otra_base, fecha):
+    def comparar_bases(self, otra_base: object, fecha: object) -> object:
+        """
+
+        :rtype: object
+        """
         try:
             if self.datos is None or otra_base.datos is None:
                 print("Error: Los datos no han sido cargados.")
@@ -99,7 +105,7 @@ class BaseDeDatos:
         if self.datos is None:
             print("Error: Los datos no han sido cargados.")
             return pd.DataFrame()
-        return self.datos[self.datos[columna_fecha] !=fecha]
+        return self.datos[self.datos[columna_fecha] != fecha]
 
     def obtener_inventario_datos(self):
         return self.datos.to_dict(orient="records")
