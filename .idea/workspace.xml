@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="522e4abc-fee4-41cd-9eb7-361c193f02e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dash/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/dashboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_base/base_de_datos.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_base/base_de_datos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flujo_front/flujo_front.py" beforeDir="false" afterPath="$PROJECT_DIR$/flujo_front/flujo_front.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flujo_integracion/flujo_integracion.py" beforeDir="false" afterPath="$PROJECT_DIR$/flujo_integracion/flujo_integracion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/archivo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/archivo.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/otra_base.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/otra_base.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
